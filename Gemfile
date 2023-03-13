@@ -20,6 +20,11 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 
+gem 'jquery-rails'
+
+gem 'materialize-sass'
+gem 'material_icons'
+
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
@@ -36,6 +41,10 @@ group :development, :test do
   gem 'pry-rails'
 
   gem 'rspec-rails'
+
+  gem 'factory_bot_rails'
+
+  gem 'faker'
 end
 
 group :development do

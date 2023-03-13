@@ -1,0 +1,25 @@
+// Place all the styles related to the Session controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#login_page {
+  height: 100vh;
+  background-color: rgb(235, 235, 235);
+
+  input {
+    color: white;
+  }
+
+  .section {
+    height: 100%;
+    position: relative;
+    background-image: asset_url("login-bg.jpg");
+
+    .row {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

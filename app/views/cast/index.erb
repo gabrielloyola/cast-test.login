@@ -1,0 +1,18 @@
+<% flash.each do |type, msg| %>
+  <%= javascript_tag "M.toast({ html: '#{msg}', classes: 'rounded' })" %>
+<% end %>
+
+<div id="cast_page">
+  <div class="section">
+    <div class="row">
+      <div class="col l6 offset-l3 s12">
+        <h3 id="greetings">Olá, <%= @user.name %>.</h3>
+        <div class="row">
+          <%= form_for :session, url: logout_path do |f| %>
+            <%= button_tag 'Logout', class: "waves-effect waves-light btn" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

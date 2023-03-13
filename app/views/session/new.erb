@@ -1,0 +1,28 @@
+<div id="login_page" class="">
+  <div class="section">
+    <div class="row">
+      <div class="col l6 offset-l3 s12">
+        <%= form_for :session, url: login_path do |f| %>
+          <% flash.each do |type, msg| %>
+            <%= javascript_tag "M.toast({ html: '#{msg}', classes: 'rounded' })" %>
+          <% end %>
+
+          <%= image_tag('cast-logo.png') %>
+
+          <div class="field">
+            <%= f.label :username %><br />
+            <%= f.text_field :username, autofocus: true %>
+          </div>
+
+          <div class="field">
+            <%= f.label :password %><br />
+            <%= f.password_field :password, autocomplete: "off" %>
+          </div>
+          <button class="waves-effect waves-light btn">
+            <%= f.submit "Login" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
